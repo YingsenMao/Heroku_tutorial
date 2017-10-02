@@ -87,3 +87,16 @@ heroku addons
 ```
 heroku help
 ```
+
+
+## Some others
+# Run heroku locally
+First run
+```
+python manage.py collectstatic
+```
+Then create a windows file called Procfile. Below is the directory and command in the Procfile.windows.
+ ![Image](/directory.PNG)
+ ```
+web: python manage.py runserver 0.0.0.0:5000
+ ```
