@@ -37,6 +37,7 @@ web: gunicorn gettingstarted.wsgi --log-file -
 The syntax is defined as:
 * process type: an alphanumeric string, is a name for your command, such as *web*, *worker*, etc.
 * command: a command line to launch the process.  
+
 You can create a Application either in your account on website or by using the below code:
 ```
 heroku create
@@ -45,7 +46,7 @@ You can use the **git remote** command to confirm that a remote named heroku has
 ```
 git remote -v
 ```
-If you have already created your Heroku app, you can easily add a remote to your local repository with the heroku git:remote command. All you need is your Heroku app’s name:
+If you want to link your existing application on Heorku to the local repository, first *cd* to the directory of your local repository, and run the below command, where *thawing-inlet-61413* is your application name.
 ```
 heroku git:remote -a thawing-inlet-61413
 ```
